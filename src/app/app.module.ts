@@ -38,9 +38,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BlankComponent,
     NavigationComponent,
     BreadcrumbComponent,
-    SidebarComponent,
-    TejaComponent,
-    BalramComponent
+    SidebarComponent
   ],
   imports: [
     CommonModule,
@@ -56,7 +54,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
       {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-    },{
+    }, {
     provide: LocationStrategy,
     useClass: HashLocationStrategy
   }],
